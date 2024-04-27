@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: #d6d7da;
+
+  &.dark {
+    background-color: #323347;
+  }
+
+  & #root {
+    width: 90vw;
+    height: 80vh;
+    max-width: 1500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+
+    &.light {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+      border: none;
+    }
+
+    &.dark {
+      box-shadow: rgba(253, 253, 253, 0.24) 0px 3px 8px;
+      box-shadow: rgba(63, 63, 63, 0.25) 0px 4px 8px -2px,
+        #cacaca14 0px 0px 0px 1px;
+      border: 1px solid #555;
+    }
+
+    & .search-container {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      padding: 2em;
+
+      &.light {
+        background-color: #fff;
+      }
+
+      &.dark {
+        background-color: #2e304b;
+        border-right: 1px solid #aaa;
+      }
+
+      & .search-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        overflow: hidden;
+        color: #aaa;
+        padding-right: 1em;
+
+        &.light {
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+            rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+          & input {
+            color: #aaa;
+          }
+        }
+
+        &.dark {
+          box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+            rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+          border: 1px solid #888;
+
+          & input {
+            color: #ccc;
+          }
+        }
+
+        & input {
+          border: none;
+          outline: none;
+          padding: 1em;
+          font-size: 1.2em;
+          background-color: transparent;
+        }
+      }
+
+      & .parent-box {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: fit-content;
+        gap: 1em;
+        width: 100%;
+
+        & .box {
+          padding: 10px;
+          padding-left: 30px;
+          border-radius: 10px;
+
+          &.light {
+            background-color: #fbfbff;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            & p {
+              color: #777;
+            }
+          }
+
+          &.dark {
+            background-color: #1e213a;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+              rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+            border: 1px solid #555;
+
+            & p {
+              color: #ccc;
+            }
+
+            & h2,
+            & h1 {
+              color: #fff;
+            }
+          }
+
+          &.weather-box {
+            padding-left: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+          }
+
+          & img {
+            height: 100px;
+          }
+
+          & h1 {
+            font-size: 1.6em;
+            font-weight: 500;
+          }
+
+          & h2 {
+            font-weight: 400;
+          }
+
+          & p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    & .content-box {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+
+      &.dark {
+        background-color: #1e213a;
+        color: #fff;
+      }
+
+      &.light {
+        background-color: #f6f6f8;
+        color: #000;
+      }
+
+      & .user-weather {
+        width: 100%;
+        height: 50%;
+        border-bottom: 1px solid #aaa;
+        padding: 1em;
+        position: relative;
+
+        & .user-weather-box {
+          margin-top: 1em;
+          padding: 1em;
+          width: 100%;
+          height: max-content;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          & > h1 {
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-block: 1px solid #ccc;
+
+            & > button {
+              padding: 10px 2em;
+              border-radius: 30px;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+
+          & .box {
+            padding: 1em;
+            border-radius: 10px;
+            height: 200px;
+            width: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            &.light {
+              background-color: #fff;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+              & > h2 {
+                color: #777;
+              }
+
+              & > h2 {
+                color: #777;
+              }
+            }
+
+            &.dark {
+              background-color: #2e304b;
+              box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+                rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+              border: 1px solid #888;
+
+              & > h2 {
+                color: #ccc;
+              }
+            }
+
+            & h1 {
+              font-weight: 500;
+              font-size: 2em;
+            }
+
+            & h2 {
+              font-size: 1.2em;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        & .user-option-box {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 10px;
+          border-bottom-left-radius: 10px;
+
+          &.light {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+              rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          }
+
+          &.dark {
+            background-color: #ffffff21;
+            box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
+              rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+          }
+
+          & button {
+            width: 35px;
+            display: flex;
+            place-content: center;
+            height: 30px;
+            border-radius: 50%;
+            font-weight: 600;
+
+            &.light {
+              background-color: #fff;
+              color: #000;
+
+              &.active {
+                background-color: #000;
+                color: #fff;
+              }
+            }
+
+            &.dark {
+              background-color: #000;
+              color: #fff;
+
+              &.active {
+                background-color: #fff;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+
+      & .weather-history-box {
+        width: 100%;
+        height: 50%;
+        padding: 1em;
+
+        & .history-box {
+          width: 100%;
+          height: 100%;
+          padding: 1em;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1em;
+          overflow-x: scroll;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+          & .box {
+            min-height: 200px;
+            min-width: 160px;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            &.light {
+              background-color: #fff;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+              & > p {
+                color: #777;
+              }
+            }
+
+            &.dark {
+              background-color: #2e304b;
+              box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+                rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+              border: 1px solid #888;
+
+              & > p {
+                color: #ddd;
+              }
+            }
+
+            & p {
+              font-weight: 600;
+            }
+
+            & img {
+              height: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
