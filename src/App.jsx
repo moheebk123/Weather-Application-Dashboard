@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
 import { useState } from "react";
 import ContentBox from "./components/ContentBox";
 import SearchBox from "./components/SearchBox";
 
 const App = () => {
   // Saves weather history
-  const [weatherHistory, setweatherHistory] = useState([]);
+  // const [weatherHistory, setweatherHistory] = useState([]);
+  const [weatherHistory, setweatherHistory] = useState([
+    { searchDate: "22/4/2024", icon: "Clear", cTemp: "33", city: "London" },
+    { searchDate: "22/4/2024", icon: "Clear", cTemp: "33", city: "London" },
+    { searchDate: "22/4/2024", icon: "Clear", cTemp: "33", city: "London" },
+    { searchDate: "22/4/2024", icon: "Clear", cTemp: "33", city: "London" },
+    { searchDate: "22/4/2024", icon: "Clear", cTemp: "33", city: "London" },
+    { searchDate: "22/4/2024", icon: "Clear", cTemp: "33", city: "London" },
+    { searchDate: "22/4/2024", icon: "Clear", cTemp: "33", city: "London" },
+  ]);
 
   // Used for theme
   const [theme, setTheme] = useState("light");

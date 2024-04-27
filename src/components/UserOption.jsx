@@ -47,7 +47,7 @@ const UserOptionBox = ({
           <Fab className={theme} onClick={handleFarenheit}>
             °F
           </Fab>
-          <Divider orientation="vertical" flexItem />
+          <Divider orientation="vertical" className="divider" flexItem />
           <Fab className={`${theme} active`} onClick={handleLightTheme}>
             <Brightness7 onClick={handleLightTheme} />
           </Fab>
@@ -70,7 +70,7 @@ const UserOptionBox = ({
           <Fab className={`${theme} active`} onClick={handleFarenheit}>
             °F
           </Fab>
-          <Divider orientation="vertical" flexItem />
+          <Divider orientation="vertical" className="divider" flexItem />
           <Fab className={`${theme} active`} onClick={handleLightTheme}>
             <Brightness7 onClick={handleLightTheme} />
           </Fab>
@@ -95,7 +95,7 @@ const UserOptionBox = ({
           <Fab className={theme} onClick={handleFarenheit}>
             °F
           </Fab>
-          <Divider orientation="vertical" flexItem />
+          <Divider orientation="vertical" className="divider" flexItem />
           <Fab className={`${theme} active`} onClick={handleLightTheme}>
             <Brightness7 onClick={handleLightTheme} />
           </Fab>
@@ -118,7 +118,7 @@ const UserOptionBox = ({
           <Fab className={`${theme} active`} onClick={handleFarenheit}>
             °F
           </Fab>
-          <Divider orientation="vertical" flexItem />
+          <Divider orientation="vertical" className="divider" flexItem />
           <Fab className={`${theme} active`} onClick={handleLightTheme}>
             <Brightness7 onClick={handleLightTheme} />
           </Fab>

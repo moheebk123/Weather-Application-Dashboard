@@ -7,15 +7,26 @@ import PlaceIcon from "@mui/icons-material/Place";
 
 // This component is used to display user weather information
 const WeatherBox = ({ index, theme, temp, tempType, heading, weather }) => {
-  return (
-    <div className={`box ${theme}`}>
-      {index === 0 ? (
-        <>
-          <h2>{heading}</h2>
+  if (index === 0) {
+    return (
+      <div className={`box ${theme} weather-box`}>
+        <h2>{heading}</h2>
           <img src={weather} alt="Weather Icon" />
-        </>
-      ) : index === 2 ? (
-        <>
+      </div>
+    );
+  } else if (index === 1) {
+    return (
+      <div className={`box ${theme}`}>
+        <h2>
+          {heading}
+          <PlaceIcon />
+        </h2>
+        <h1>{weather}</h1>
+      </div>
+    );
+  } else if (index === 2) {
+    return (
+      <div className={`box ${theme}`}>
           <h2>
             {heading}
             <ThermostatIcon />
@@ -23,34 +34,29 @@ const WeatherBox = ({ index, theme, temp, tempType, heading, weather }) => {
           <h1>
             {tempType === "C" ? temp.cTemp : temp.fTemp}°{tempType}
           </h1>
-        </>
-      ) : index === 3 ? (
-        <>
-          <h2>
-            {heading}
-            <AirIcon />
-          </h2>
-          <h1>{weather}km/h</h1>
-        </>
-      ) : index === 4 ? (
-        <>
-          <h2>
-            {heading}
-            <WaterIcon />
-          </h2>
-          <h1>{weather}%</h1>
-        </>
-      ) : (
-        <>
-          <h2>
-            {heading}
-            <PlaceIcon />
-          </h2>
-          <h1>{weather}</h1>
-        </>
-      )}
-    </div>
-  );
+      </div>
+    );
+  } else if (index === 3) {
+    return (
+      <div className={`box ${theme}`}>
+        <h2>
+          {heading}
+          <AirIcon />
+        </h2>
+        <h1>{weather}km/h</h1>
+      </div>
+    );
+  } else if (index === 4) {
+    return (
+      <div className={`box ${theme}`}>
+        <h2>
+          {heading}
+          <WaterIcon />
+        </h2>
+        <h1>{weather}%</h1>
+      </div>
+    );
+  }
 };
 
 // Validate Props
