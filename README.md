@@ -15,9 +15,9 @@
 <img src="./public/photo6.png">
 <h3>Data in celcius in light theme</h3>
 <img src="./public/photo7.png">
-<h3>Data in celcius in dark theme</h3>
-<img src="./public/photo8.png">
 <h3>Data in farenheit in light theme</h3>
+<img src="./public/photo8.png">
+<h3>Data in celcius in dark theme</h3>
 <img src="./public/photo9.png">
 <h3>Data in farenheit in dark theme</h3>
 <img src="./public/photo10.png">
