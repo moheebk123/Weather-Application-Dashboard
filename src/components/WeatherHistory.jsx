@@ -1,4 +1,5 @@
 import propTypes from "prop-types";
+import React from "react";
 import History from "./History";
 
 const WeatherHistory = ({ theme,tempType, weatherHistory }) => {

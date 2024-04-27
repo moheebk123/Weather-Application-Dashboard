@@ -1,5 +1,6 @@
 import UserWeather from "./UserWeather";
 import WeatherHistory from "./WeatherHistory";
+import React from "react";
 import propTypes from "prop-types";
 
 const ContentBox = ({

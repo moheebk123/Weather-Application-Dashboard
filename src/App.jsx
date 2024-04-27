@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from "react";
 import ContentBox from "./components/ContentBox";
 import SearchBox from "./components/SearchBox";

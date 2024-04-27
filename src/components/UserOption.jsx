@@ -1,5 +1,6 @@
 import { Stack, Fab, Divider } from "@mui/material";
 import { DarkMode, Brightness7 } from "@mui/icons-material";
+import React from "react";
 import propTypes from "prop-types";
 
 const UserOptionBox = ({

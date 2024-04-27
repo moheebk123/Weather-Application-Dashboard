@@ -12,6 +12,7 @@ import thunderStorm from "../assets/thunderstorm.gif";
 import dust from "../assets/dust.gif";
 import UserDenied from "./UserDenied";
 import WeatherBox from "./WeatherBox";
+import React from "react";
 import propTypes from "prop-types";
 
 const UserWeather = ({

@@ -1,3 +1,4 @@
+import React from "react";
 import propTypes from "prop-types";
 import mist from "../assets/mist.gif";
 import clear from "../assets/clear.gif";

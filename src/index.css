@@ -47,6 +47,7 @@ body {
       justify-content: center;
       gap: 1em;
       padding: 2em;
+      border-right: 1px solid #aaa;
 
       &.light {
         background-color: #fff;
@@ -54,7 +55,6 @@ body {
 
       &.dark {
         background-color: #2e304b;
-        border-right: 1px solid #aaa;
       }
 
       & .search-box {
