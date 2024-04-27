@@ -1,6 +1,6 @@
 # Weather-Application-Dashboard
 
-<h2>There are some images of websites in desktop view</h2>
+<h2>There are some images of WEATHER-DASHBOAD-APPLICATION in desktop view</h2>
 <h3>Default view of light theme</h3>
 <img src="./public/photo1.png">
 <h3>Default view of dark theme</h3>
