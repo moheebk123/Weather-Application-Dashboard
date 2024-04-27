@@ -4,16 +4,23 @@ import ContentBox from "./components/ContentBox";
 import SearchBox from "./components/SearchBox";
 
 const App = () => {
+  // Saves weather history
   const [weatherHistory, setweatherHistory] = useState([]);
+
+  // Used for theme
   const [theme, setTheme] = useState("light");
+
+  // Used for Temperature Type, Celsius and Fahrenheit
   const [tempType, setTempType] = useState("C");
 
+  // This function is used to update weather searched history
   const updateWeatherHistory = (newWeatherHistory) => {
     setweatherHistory((prev) => {
       return [newWeatherHistory, ...prev];
     });
   };
 
+  // This function is used to toggle theme from dark to light
   const changeToLightTheme = () => {
     document.body.classList.remove("dark");
     document.body.classList.add("light");
@@ -23,6 +30,7 @@ const App = () => {
     setTheme("light");
   };
 
+  // This function is used to toggle theme from light to dark
   const changeToDarkTheme = () => {
     document.body.classList.remove("light");
     document.body.classList.add("dark");
@@ -32,10 +40,12 @@ const App = () => {
     setTheme("dark");
   };
 
+  // This function is used to toggle temperature from Farenhite to Celsius
   const changeTempToC = () => {
     setTempType("C");
   };
 
+  // This function is used to toggle temperature from Celsius to Farenhite
   const changeTempToF = () => {
     setTempType("F");
   };

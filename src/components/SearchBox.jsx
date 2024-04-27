@@ -18,10 +18,17 @@ import React from "react";
 import { useState } from "react";
 import propTypes from "prop-types";
 
+// This component is used to provide searhc option and display searched city weather information
 const SearchBox = ({ theme, tempType, onUpdate }) => {
   const apiKey = "09afd4ca0275624aa322a24eefcd9082";
+
+  // Used to store searched city
   const [searchCity, setSearchCity] = useState("");
+
+  // Used to store type of searched weather. Like : Rain, Sunny, Dust, Thunderstorm, Haze, etc.
   const [weather, setWeather] = useState("");
+
+  // Used to store information of searced weather
   const [searchedWeather, setSearchWeather] = useState({
     city: "",
     cTemp: "",
@@ -31,6 +38,7 @@ const SearchBox = ({ theme, tempType, onUpdate }) => {
     icon: "",
   });
 
+  // This function is used to update weather history
   const updateHistory = (icon, cTemp, fTemp, city) => {
     const date = new Date();
     const curDate = date.getDate();
@@ -41,6 +49,7 @@ const SearchBox = ({ theme, tempType, onUpdate }) => {
     onUpdate(newWeatherHistory);
   };
 
+  // This function is used to get weather information by city name
   const searchWeather = async () => {
     const api = `https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${apiKey}&q=${searchCity}`;
     setSearchCity("");
@@ -144,6 +153,7 @@ const SearchBox = ({ theme, tempType, onUpdate }) => {
   );
 };
 
+// Validate Props
 SearchBox.propTypes = {
   theme: propTypes.string.isRequired,
   tempType: propTypes.string.isRequired,

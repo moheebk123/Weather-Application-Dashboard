@@ -2,6 +2,7 @@ import React from "react";
 import propTypes from "prop-types";
 import Button from "@mui/material/Button";
 
+// This component is used to show that User disallow location access and give button to provide location access
 const UserDenied = ({ theme, getUserPosition }) => {
   return (
     <h1 className={theme}>
@@ -13,6 +14,7 @@ const UserDenied = ({ theme, getUserPosition }) => {
   );
 };
 
+// Validate Props
 UserDenied.propTypes = {
   theme: propTypes.string.isRequired,
   getUserPosition: propTypes.func.isRequired,

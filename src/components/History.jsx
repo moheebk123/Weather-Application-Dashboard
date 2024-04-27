@@ -10,6 +10,7 @@ import rain from "../assets/rain.gif";
 import dust from "../assets/dust.gif";
 import thunderStorm from "../assets/thunderstorm.gif";
 
+// This component is used to render each history information recieved from the WeatherHistory component
 const History = ({ theme, tempType, searchDate, icon, cTemp, fTemp, city }) => {
   let newIcon;
   if (icon === "Clear") {
@@ -44,6 +45,7 @@ const History = ({ theme, tempType, searchDate, icon, cTemp, fTemp, city }) => {
   );
 };
 
+// Validate Props
 History.propTypes = {
   theme: propTypes.string.isRequired,
   tempType: propTypes.string.isRequired,

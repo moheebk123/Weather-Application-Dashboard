@@ -3,6 +3,9 @@ import WeatherHistory from "./WeatherHistory";
 import React from "react";
 import propTypes from "prop-types";
 
+// This component is used to render two components
+// First component, UserWeather for user weather information
+// Second component, WeatherHistory for searched weather history 
 const ContentBox = ({
   weatherHistory,
   theme,
@@ -31,6 +34,7 @@ const ContentBox = ({
   );
 };
 
+// Validate Props
 ContentBox.propTypes = {
   weatherHistory: propTypes.array.isRequired,
   theme: propTypes.string.isRequired,

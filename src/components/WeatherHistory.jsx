@@ -2,6 +2,7 @@ import propTypes from "prop-types";
 import React from "react";
 import History from "./History";
 
+// This component is used to render the weather history information by looping weather history through History Component
 const WeatherHistory = ({ theme,tempType, weatherHistory }) => {
   return (
     <div className="weather-history-box">
@@ -30,6 +31,7 @@ const WeatherHistory = ({ theme,tempType, weatherHistory }) => {
   );
 };
 
+// Validate Props
 WeatherHistory.propTypes = {
   theme: propTypes.string.isRequired,
   tempType: propTypes.string.isRequired,

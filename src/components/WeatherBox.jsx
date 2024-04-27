@@ -5,6 +5,7 @@ import WaterIcon from "@mui/icons-material/Water";
 import ThermostatIcon from "@mui/icons-material/Thermostat";
 import PlaceIcon from "@mui/icons-material/Place";
 
+// This component is used to display user weather information
 const WeatherBox = ({ index, theme, temp, tempType, heading, weather }) => {
   return (
     <div className={`box ${theme}`}>
@@ -52,6 +53,7 @@ const WeatherBox = ({ index, theme, temp, tempType, heading, weather }) => {
   );
 };
 
+// Validate Props
 WeatherBox.propTypes = {
   index: propTypes.number.isRequired,
   theme: propTypes.string.isRequired,
