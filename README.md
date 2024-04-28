@@ -30,41 +30,59 @@
     Choose a folder or directory in your sytem, or create a new folder or
     directory.
   </li>
+  <br/>
   <img src="./public/photo11.png" />
+  <br/>
   <li>
     Open that forder or directory in VS Code.
+    <br/>
     <ul>
       <li>Right click on selected folder and select "Show more options"</li>
+      <br/>
       <img src="./public/photo12.png" />
+      <br/>
       <li>Then select "Open with code" to open that folder in VS Code</li>
+      <br/>
       <img src="./public/photo13.png" />
+      <br/>
     </ul>
   </li>
   <li>Open VS Code Terminal with shortcut key :- " Ctrl + ` "</li>
+  <br/>
   <img src="./public/photo14.png" />
+  <br/>
   <li>
     Run the below command to clone repository
-    <br />"https://github.com/moheebk123/Weather-Application-Dashboard.git"
+    <br />"git clone https://github.com/moheebk123/Weather-Application-Dashboard.git"
   </li>
+  <br/>
   <img src="./public/photo15.png" />
+  <br/>
   <li>
     Run the below command to change Project Directory to Application
     Directory<br />"cd .\Weather-Application-Dashboard\"
   </li>
+  <br/>
   <img src="./public/photo16.png" />
+  <br/>
   <li>
     Run the below command to install necessary packages <br />"npm i" or
     "npm install"
   </li>
+  <br/>
   <img src="./public/photo17.png" />
+  <br/>
   <li>
     Run the below command to start development server<br />"npm run dev"
   </li>
+  <br/>
   <img src="./public/photo18.png" />
+  <br/>
   <li>
     Go to the link provided by vite in terminal<br />by "Ctrl + click" or
     searching the link in browser
   </li>
+  <br/>
   <img src="./public/photo19.png" />
   <li>Congratulations you run the application successfully</li>
   <img src="./public/photo1.png" />
