@@ -1,6 +1,6 @@
 import axios from "axios";
 import UserOption from "./UserOption";
-import { useState } from "react";
+import React, { useState } from "react";
 import mist from "../assets/mist.gif";
 import clear from "../assets/clear.gif";
 import clouds from "../assets/clouds.gif";
@@ -12,7 +12,6 @@ import thunderStorm from "../assets/thunderstorm.gif";
 import dust from "../assets/dust.gif";
 import UserDenied from "./UserDenied";
 import WeatherBox from "./WeatherBox";
-import React from "react";
 import propTypes from "prop-types";
 
 // This component is used to render Three Components,

@@ -1,26 +1,31 @@
 # Weather-Application-Dashboard
 
 <h2>There are some images of WEATHER-DASHBOAD-APPLICATION in desktop view</h2>
-<h3>Default view of light theme</h3>
+<h3>Project view of light theme</h3>
 <img src="./public/photo1.png" />
-<h3>Default view of dark theme</h3>
+<h3>Project view of dark theme</h3>
 <img src="./public/photo2.png" />
-<h3>After allowing location access in light theme</h3>
-<img src="./public/photo3.png" />
-<h3>After allowing location accessin dark theme</h3>
-<img src="./public/photo4.png" />
-<h3>After searching weathers of some cities in light theme</h3>
-<img src="./public/photo5.png" />
-<h3>After searching weathers of some cities in dark theme</h3>
-<img src="./public/photo6.png" />
-<h3>Data in celcius in light theme</h3>
-<img src="./public/photo7.png" />
-<h3>Data in farenheit in light theme</h3>
-<img src="./public/photo8.png" />
-<h3>Data in celcius in dark theme</h3>
-<img src="./public/photo9.png" />
-<h3>Data in farenheit in dark theme</h3>
-<img src="./public/photo10.png" />
+<br/>
+<hr/>
+<h3>Features of this projects are given below:</h3>
+<li>It provides a feature to search weather by city name, and shows information such as
+  <br/>Weather Type (Rain, Clear, Cloud, etc.)
+  <br/> City Name
+  <br/>Temperature
+  <br/>Wind Speed
+  <br/>Humidity
+</li>
+<li>It shows the User Weather information same as search weather information, if user allowed location access.</li>
+<li>It shows the Searched Weathers History which contans information such as
+  <br/>Search Date
+  <br/>Weather Type
+  <br/>Temperature
+  <br/>City
+</li>
+<li>It allows you to see temperature in celsius or fahrenheit.</li>
+<li>It allows you to see application in dark or light theme.</li>
+<li>It changes it's background according to day intervals like Morning, Afternoon, Evening, Night.</li>
+<li>It is fully responsive.</li>
 <br/>
 <hr/>
 <h2>If you want to run this application in your system, Follow the below steps:</h2>
@@ -32,7 +37,7 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo11.png" />
+  <img src="./public/photo3.png" />
   <br/>
   <br/>
   <li>
@@ -43,13 +48,13 @@
       <li>Right click on selected folder and select "Show more options"</li>
       <br/>
       <br/>
-      <img src="./public/photo12.png" />
+      <img src="./public/photo3.png" />
       <br/>
       <br/>
       <li>Then select "Open with code" to open that folder in VS Code</li>
       <br/>
       <br/>
-      <img src="./public/photo13.png" />
+      <img src="./public/photo4.png" />
       <br/>
       <br/>
     </ul>
@@ -57,7 +62,7 @@
   <li>Open VS Code Terminal with shortcut key :- " Ctrl + ` "</li>
   <br/>
   <br/>
-  <img src="./public/photo14.png" />
+  <img src="./public/photo5.png" />
   <br/>
   <br/>
   <li>
@@ -66,7 +71,7 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo15.png" />
+  <img src="./public/photo6.png" />
   <br/>
   <br/>
   <li>
@@ -75,7 +80,7 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo16.png" />
+  <img src="./public/photo7.png" />
   <br/>
   <br/>
   <li>
@@ -84,7 +89,7 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo17.png" />
+  <img src="./public/photo8.png" />
   <br/>
   <br/>
   <li>
@@ -92,7 +97,7 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo18.png" />
+  <img src="./public/photo9.png" />
   <br/>
   <br/>
   <li>
@@ -101,11 +106,11 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo19.png" />
+  <img src="./public/photo10.png" />
   <br/>
   <br/>
   <li>Congratulations you run the application successfully</li>
   <br/>
   <br/>
-  <img src="./public/photo1.png" />
+  <img src="./public/photo11.png" />
 </ol>

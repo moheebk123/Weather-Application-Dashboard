@@ -22,7 +22,7 @@ body {
   }
 
   &.dark {
-    background-color: #323347;
+    background: #080808e0;
   }
 
   & #root {
@@ -32,11 +32,14 @@ body {
     display: flex;
     align-items: stretch;
     position: relative;
+    border-radius: 20px;
+    overflow: hidden;
 
     @media (max-width: 1600px) {
       width: 100vw;
       min-height: 100vh;
       height: max-content;
+      border-radius: 0;
     }
 
     @media (max-width: 1250px) {
@@ -45,19 +48,18 @@ body {
 
     &.light {
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-      border: none;
     }
 
-    &.dark {
-      box-shadow: rgba(253, 253, 253, 0.24) 0px 3px 8px;
-      box-shadow: rgba(63, 63, 63, 0.25) 0px 4px 8px -2px,
-        #cacaca14 0px 0px 0px 1px;
-      border: 1px solid #555;
+    & .background-box {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
     }
 
     & .search-container {
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
       width: 30%;
       display: flex;
       flex-direction: column;
@@ -65,31 +67,18 @@ body {
       justify-content: center;
       gap: 1em;
       padding: 2em;
-      border-right: 1px solid #aaa;
-
-      @media (max-width: 1600px) {
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-      }
+      border-right: 1px solid #fff;
 
       @media (max-width: 1250px) {
         width: 100%;
         height: max-content;
         min-height: 230px;
-        border-bottom: 1px solid #aaa;
+        border-bottom: 1px solid #fff;
         border-right: none;
       }
 
       @media (max-width: 750px) {
         padding-block: 6em;
-      }
-
-      &.light {
-        background-color: #fff;
-      }
-
-      &.dark {
-        background-color: #2e304b;
       }
 
       & .search-box {
@@ -98,26 +87,23 @@ body {
         gap: 10px;
         border-radius: 30px;
         overflow: hidden;
-        color: #aaa;
+        color: #fff;
         padding-right: 1em;
 
         &.light {
+          background: rgba(255, 255, 255, 0.15);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
             rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
-          & input {
-            color: #aaa;
-          }
         }
 
         &.dark {
-          box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-            rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-          border: 1px solid #888;
-
-          & input {
-            color: #ccc;
-          }
+          background: rgba(8, 8, 8, 0.404);
+          box-shadow: 0 5px 15px 0 rgba(8, 8, 8, 0.37);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
         }
 
         & input {
@@ -126,6 +112,11 @@ body {
           padding: 1em;
           font-size: 1.2em;
           background-color: transparent;
+          color: #fff;
+
+          &::placeholder {
+            color: #ddd;
+          }
         }
       }
 
@@ -230,28 +221,17 @@ body {
           }
 
           &.light {
-            background-color: #fbfbff;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-            & p {
-              color: #777;
-            }
+            background: rgba(255, 255, 255, 0.377);
+            box-shadow: 0 8px 32px 0 rgba(130, 130, 133, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
           }
 
           &.dark {
-            background-color: #1e213a;
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-              rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-            border: 1px solid #555;
-
-            & p {
-              color: #ccc;
-            }
-
-            & h2,
-            & h1 {
-              color: #fff;
-            }
+            background: rgba(8, 8, 8, 0.404);
+            box-shadow: 0 8px 15px 0 rgba(8, 8, 8, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
           }
 
           &.weather-box {
@@ -275,10 +255,12 @@ body {
           & h1 {
             font-size: 1.6em;
             font-weight: 500;
+            color: #fff;
           }
 
           & h2 {
             font-weight: 400;
+            color: #fff;
           }
 
           & p {
@@ -286,6 +268,7 @@ body {
             align-items: center;
             gap: 10px;
             font-weight: 600;
+              color: #f1f1f1;
 
             @media (max-width: 1024px) {
               gap: 5px;
@@ -296,38 +279,22 @@ body {
     }
 
     & .content-box {
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
       width: 70%;
       display: flex;
       flex-direction: column;
       align-items: stretch;
       justify-content: center;
-
-      @media (max-width: 1600px) {
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-      }
+      color: #fff;
 
       @media (max-width: 1250px) {
         width: 100%;
         height: max-content;
       }
 
-      &.dark {
-        background-color: #1e213a;
-        color: #fff;
-      }
-
-      &.light {
-        background-color: #f6f6f8;
-        color: #000;
-      }
-
       & .user-weather {
         width: 100%;
         height: 50%;
-        border-bottom: 1px solid #aaa;
+        border-bottom: 1px solid #fff;
         padding: 1em;
 
         @media (max-width: 1450px) {
@@ -344,6 +311,7 @@ body {
         & > h2 {
           font-size: 2.2em;
         }
+
         & > h3 {
           font-size: 1.8em;
         }
@@ -363,21 +331,14 @@ body {
             display: grid;
           }
 
-          @media (max-width: 1024px) {
-          }
-
           & > h1 {
             padding: 10px;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-block: 1px solid #ccc;
-
-            @media (max-width: 1430px) {
-              border-block: none;
-              border-top: 1px solid #ccc;
-            }
+            margin-top: 1em;
+            border-block: 1px solid #fff;
 
             & > button {
               margin-left: 1em;
@@ -475,49 +436,40 @@ body {
             }
 
             &.weather-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: center;
             }
 
             &.light {
-              background-color: #fff;
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
-              & > h2 {
-                color: #777;
-              }
-
-              & > h2 {
-                color: #777;
-              }
+              background: rgba(255, 255, 255, 0.377);
+              box-shadow: 0 8px 15px 0 rgba(130, 130, 133, 0.37);
+              backdrop-filter: blur(4px);
+              -webkit-backdrop-filter: blur(4px);
             }
 
             &.dark {
-              background-color: #2e304b;
-              box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-                rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-              border: 1px solid #888;
 
-              & > h2 {
-                color: #ccc;
-              }
+            background: rgba(8, 8, 8, 0.404);
+            box-shadow: 0 8px 15px 0 rgba(8, 8, 8, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
             }
 
             & h1 {
               font-weight: 500;
               font-size: 2em;
+              margin-top: 1em;
             }
 
             & h2 {
-
               font-size: 1.2em;
               display: flex;
               align-items: center;
               gap: 10px;
               font-weight: 600;
+              color: #f1f1f1;
             }
           }
         }
@@ -529,11 +481,6 @@ body {
         right: 0;
         padding: 10px;
         border-bottom-left-radius: 10px;
-        border-top-right-radius: 10px;
-
-        @media (max-width: 1600px) {
-          border-top-right-radius: 0px;
-        }
 
         @media (max-width: 1450px) {
           padding: 1em;
@@ -554,9 +501,9 @@ body {
           box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
             rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
 
-            & .divider {
-              background-color: #fff;
-            }
+          & .divider {
+            background-color: #fff;
+          }
         }
 
         & button {
@@ -580,8 +527,8 @@ body {
           &.dark {
             background-color: #000;
             color: #fff;
-          box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
-            rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+            box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
+              rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
 
             &.active {
               background-color: #fff;
@@ -635,28 +582,22 @@ body {
           gap: 10px;
 
           &.light {
-            background-color: #fff;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-              rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
-            & > p {
-              color: #777;
-            }
+            background: rgba(255, 255, 255, 0.377);
+            box-shadow: 0 1px 10px 0 rgba(130, 130, 133, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
           }
 
           &.dark {
-            background-color: #2e304b;
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-              rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-            border: 1px solid #888;
-
-            & > p {
-              color: #ddd;
-            }
+            background: rgba(8, 8, 8, 0.404);
+            box-shadow: 0 8px 15px 0 rgba(8, 8, 8, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
           }
 
           & p {
             font-weight: 600;
+              color: #f1f1f1;
           }
 
           & img {

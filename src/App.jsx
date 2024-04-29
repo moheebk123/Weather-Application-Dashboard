@@ -1,8 +1,12 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import ContentBox from "./components/ContentBox";
 import SearchBox from "./components/SearchBox";
+import BackgroundBox from "./components/BackgroundBox";
 
+// The App Component mainly renders three components
+// First is BackgroundBox for Backgroud
+// Second is SearchBox for Weather Search
+// Third is ContentBox for User Weather Location and Searched Weather History
 const App = () => {
   // Saves weather history
   const [weatherHistory, setweatherHistory] = useState([]);
@@ -52,6 +56,7 @@ const App = () => {
 
   return (
     <>
+      <BackgroundBox />
       <SearchBox
         theme={theme}
         tempType={tempType}

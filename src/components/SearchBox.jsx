@@ -14,8 +14,7 @@ import ThermostatIcon from "@mui/icons-material/Thermostat";
 import PlaceIcon from "@mui/icons-material/Place";
 import axios from "axios";
 import Divider from "@mui/material/Divider";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import propTypes from "prop-types";
 
 // This component is used to provide searhc option and display searched city weather information
