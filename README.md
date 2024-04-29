@@ -1,40 +1,35 @@
 # Weather-Application-Dashboard
 
-<h2>There are some images of <ins>WEATHER-DASHBOAD-APPLICATION</ins> in desktop view</h2>
-<h3><ins>Light Theme</ins></h3>
+<h2>There are some images of WEATHER-DASHBOAD-APPLICATION in desktop view</h2>
+<h3>Light Theme</h3>
 <img src="./public/photo1.png" />
-<h3><ins>Dark Theme</ins></h3>
+<h3>Dark Theme</h3>
 <img src="./public/photo2.png" />
 <br/>
 <hr/>
-<h3><ins>Features of this projects are given below</ins>:</h3>
-<li>It provides a feature to <ins>Search Weather by City Name</ins>, and shows information such as
+<h2>Features of this projects are given below:</h2>
+<li>It provides a feature to <b>Search Weather by City Name</b>, and shows information such as
 <dl>
-  <dd>- Weather Type (Rain, Clear, Cloud, etc.)</dd>
-  <dd>- City Name</dd>
-  <dd>- Temperature</dd>
-  <dd>- Wind Speed</dd>
-  <dd>- Humidity</dd>
+  <dd><b>- Weather Type (Rain, Clear, Cloud, etc.)</b></dd>
+  <dd><b>- City Name</b></dd>
+  <dd><b>- Temperature</b></dd>
+  <dd><b>- Wind Speed</b></dd>
+  <dd><b>- Humidity</b></dd>
 </dl>
 </li>
-<li>It shows the <ins>User Weather Information</ins> same as <ins>Search Weather Information</ins>, if user allowed <ins>Location Access</ins>.</li>
-<li>It shows the Searched Weathers History which contans information such as
-  <br/>- Search Date
-  <br/>- Weather Type
-  <br/>- Temperature
-  <br/>- City
+<li>It shows the <b>User Weather Information</b> same as <b>Search Weather Information</b>, if user allowed <b>Location Access</b>.</li>
+<li>It shows the <b>Searched Weathers History</b> which contans information such as
 <dl>
-  <dd>Weather Type (Rain, Clear, Cloud, etc.)</dd>
-  <dd>- Search Date</dd>
-  <dd>- Weather Type</dd>
-  <dd>- Temperature</dd>
-  <dd>- City</dd>
+  <dd><b>- Search Date</b></dd>
+  <dd><b>- Weather Type</b></dd>
+  <dd><b>- Temperature</b></dd>
+  <dd><b>- City</b></dd>
 </dl>
 </li>
-<li>It allows you to see <ins>Temperature</ins> in <ins>Celsius or Fahrenheit</ins>.</li>
-<li>It allows you to see <ins>Application</ins> in <ins>Dark or Light Theme</ins>.</li>
-<li>It changes it's <ins>background</ins> according to <ins>Day Intervals</ins> like Morning, Afternoon, Evening, Night.</li>
-<li>It is Fully Responsive.</li>
+<li>It allows you to see <b>Temperature</b> in <b>Celsius or Fahrenheit</b>.</li>
+<li>It allows you to see <b>Application</b> in <b>Dark or Light Theme</b>.</li>
+<li>It changes it's <b>background</b> according to <b>Day Intervals</b> like Morning, Afternoon, Evening, Night.</li>
+<li>It is <b>Fully Responsive</b>.</li>
 <br/>
 <hr/>
 <h2>If you want to run this application in your system, Follow the below steps:</h2>
