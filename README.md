@@ -10,7 +10,7 @@
 <h3><ins>Features of this projects are given below</ins>:</h3>
 <li>It provides a feature to <ins>Search Weather by City Name</ins>, and shows information such as
 <dl>
-  <dd>Weather Type (Rain, Clear, Cloud, etc.)</dd>
+  <dd>- Weather Type (Rain, Clear, Cloud, etc.)</dd>
   <dd>- City Name</dd>
   <dd>- Temperature</dd>
   <dd>- Wind Speed</dd>
