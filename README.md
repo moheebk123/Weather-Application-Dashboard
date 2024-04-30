@@ -7,6 +7,14 @@
 <img src="./public/photo2.png" />
 <br/>
 <hr/>
+<h2>Technologies Used</h2>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Material UI</li>
+<br/>
+<hr/>
 <h2>Features of this projects are given below:</h2>
 <li>It provides a feature to <b>Search Weather by City Name</b>, and shows information such as
 <dl>
