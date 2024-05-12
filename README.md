@@ -60,13 +60,13 @@
       <li>Right click on selected folder and select "Show more options"</li>
       <br/>
       <br/>
-      <img src="./public/photo3.png" />
+      <img src="./public/photo4.png" />
       <br/>
       <br/>
       <li>Then select "Open with code" to open that folder in VS Code</li>
       <br/>
       <br/>
-      <img src="./public/photo4.png" />
+      <img src="./public/photo5.png" />
       <br/>
       <br/>
     </ul>
@@ -74,7 +74,7 @@
   <li>Open VS Code Terminal with shortcut key :- " Ctrl + ` "</li>
   <br/>
   <br/>
-  <img src="./public/photo5.png" />
+  <img src="./public/photo6.png" />
   <br/>
   <br/>
   <li>
@@ -83,7 +83,7 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo6.png" />
+  <img src="./public/photo7.png" />
   <br/>
   <br/>
   <li>
@@ -92,7 +92,7 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo7.png" />
+  <img src="./public/photo8.png" />
   <br/>
   <br/>
   <li>
@@ -101,7 +101,7 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo8.png" />
+  <img src="./public/photo9.png" />
   <br/>
   <br/>
   <li>
@@ -109,7 +109,7 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo9.png" />
+  <img src="./public/photo10.png" />
   <br/>
   <br/>
   <li>
@@ -118,11 +118,11 @@
   </li>
   <br/>
   <br/>
-  <img src="./public/photo10.png" />
+  <img src="./public/photo11.png" />
   <br/>
   <br/>
   <li>Congratulations you run the application successfully</li>
   <br/>
   <br/>
-  <img src="./public/photo11.png" />
+  <img src="./public/photo1.png" />
 </ol>
