@@ -13,6 +13,7 @@ const BackgroundBox = () => {
     const changeBackground = () => {
       const hour = new Date().getHours();
       if (hour >= 4 && hour < 8) {
+        setBackground(morning);
         setPosition("center");
       } else if (hour >= 8 && hour < 16) {
         setBackground(day);
