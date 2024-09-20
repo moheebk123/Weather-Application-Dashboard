@@ -1,6 +1,6 @@
 # Weather-Application-Dashboard
 
-<h2>There are some images of WEATHER-DASHBOAD-APPLICATION in desktop view</h2>
+<h2>There are some images of WEATHER-DASHBOARD-APPLICATION in desktop view</h2>
 <h3>Light Theme</h3>
 <img src="./public/photo1.png" />
 <h3>Dark Theme</h3>
@@ -26,7 +26,7 @@
 </dl>
 </li>
 <li>It shows the <b>User Weather Information</b> same as <b>Search Weather Information</b>, if user allowed <b>Location Access</b>.</li>
-<li>It shows the <b>Searched Weathers History</b> which contans information such as
+<li>It shows the <b>Searched Weathers History</b> which contains information such as
 <dl>
   <dd><b>- Search Date</b></dd>
   <dd><b>- Weather Type</b></dd>
@@ -44,85 +44,24 @@
 <h3>
 <ol type="1">
   <li>
-    Choose a folder or directory in your sytem, or create a new folder or
-    directory.
-  </li>
-  <br/>
-  <br/>
-  <img src="./public/photo3.png" />
-  <br/>
-  <br/>
-  <li>
-    Open that forder or directory in VS Code.
-    <br/>
-    <br/>
-    <ul>
-      <li>Right click on selected folder and select "Show more options"</li>
-      <br/>
-      <br/>
-      <img src="./public/photo3.png" />
-      <br/>
-      <br/>
-      <li>Then select "Open with code" to open that folder in VS Code</li>
-      <br/>
-      <br/>
-      <img src="./public/photo4.png" />
-      <br/>
-      <br/>
-    </ul>
-  </li>
-  <li>Open VS Code Terminal with shortcut key :- " Ctrl + ` "</li>
-  <br/>
-  <br/>
-  <img src="./public/photo5.png" />
-  <br/>
-  <br/>
-  <li>
-    Run the below command to clone repository
+    Clone the repository in you system through below command
     <br />"git clone https://github.com/moheebk123/Weather-Application-Dashboard.git"
   </li>
   <br/>
-  <br/>
-  <img src="./public/photo6.png" />
-  <br/>
-  <br/>
   <li>
-    Run the below command to change Project Directory to Application
-    Directory<br />"cd .\Weather-Application-Dashboard\"
+    Open that cloned repository in VS Code.
   </li>
   <br/>
-  <br/>
-  <img src="./public/photo7.png" />
-  <br/>
-  <br/>
   <li>
-    Run the below command to install necessary packages <br />"npm i" or
+    Install necessary packages through below command: <br />"npm i" or
     "npm install"
   </li>
-  <br/>
-  <br/>
-  <img src="./public/photo8.png" />
-  <br/>
   <br/>
   <li>
     Run the below command to start development server<br />"npm run dev"
   </li>
   <br/>
-  <br/>
-  <img src="./public/photo9.png" />
-  <br/>
-  <br/>
   <li>
-    Go to the link provided by vite in terminal<br />by "Ctrl + click" or
-    searching the link in browser
+    Go to the localhost link - "http://localhost:5173"
   </li>
-  <br/>
-  <br/>
-  <img src="./public/photo10.png" />
-  <br/>
-  <br/>
-  <li>Congratulations you run the application successfully</li>
-  <br/>
-  <br/>
-  <img src="./public/photo11.png" />
 </ol>
